@@ -20,19 +20,24 @@ A child-friendly guide to the forts of Maharashtra and the life and legacy of Ch
 - `quiz.html` — interactive fort quiz
 - `landing.html` and `login.html` — introductory and archive entry pages
 
-## Run locally
+## Run locally with Python
 
-This is a static website and does not require a build step or package installation. Serve the project folder with any local static HTTP server, then open its `index.html`. For example, with Python installed:
+The project includes a small Flask application that serves the site pages and their assets. Python 3.9 or later is recommended.
 
 ```powershell
-python -m http.server 8000
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python app.py
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in a browser. The map tiles and web fonts load from external services and require an internet connection.
+Open [http://127.0.0.1:5000](http://127.0.0.1:5000). A health check is available at [http://127.0.0.1:5000/health](http://127.0.0.1:5000/health). The map tiles and web fonts load from external services and require an internet connection.
+
+The browser still uses JavaScript for interactive features such as the map, quiz, page transitions, and narration controls; Flask serves the pages and static assets.
 
 ## Deploy
 
-The site is published with GitHub Pages from the repository’s `main` branch. After pushing changes, GitHub Actions builds and publishes the updated static site.
+The current public preview is published with GitHub Pages from the repository’s `main` branch. GitHub Pages serves only the static HTML/CSS/JavaScript version and cannot run Flask. The Python server is for local use unless deployed separately to a Python-capable host.
 
 ## Project structure
 
@@ -40,6 +45,8 @@ The site is published with GitHub Pages from the repository’s `main` branch. A
 .
 ├── audio/              # English and Marathi narration clips
 ├── images/             # Fort and Shivaji Maharaj images
+├── app.py              # Flask development server
+├── requirements.txt    # Python dependencies
 ├── index.html
 ├── maharaj.html
 ├── story.html
