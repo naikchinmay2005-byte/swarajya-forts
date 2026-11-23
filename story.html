@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listen to Chhatrapati Shivaji Maharaj's story in English or Marathi, with captions and a transcript.">
+    <title>Listen to the Story — Swarajya</title>
+    <link rel="icon" type="image/svg+xml" href="images/shivaji-icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=page-transition">
+</head>
+<body class="maharaj-page story-page">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Swarajya home">
+                <span class="logo-mark">श्री</span>
+                <span>SWARAJYA</span>
+            </a>
+            <div class="nav-actions">
+                <a href="maharaj.html" class="nav-link">Shivaji Maharaj</a>
+                <a href="story.html" class="nav-link" aria-current="page">Listen to story</a>
+                <a href="quiz.html" class="nav-link">Fort quiz</a>
+                <a href="index.html#map" class="nav-link">Fort map</a>
+                <a href="index.html#forts" class="nav-link">Explore forts</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="story-page-hero">
+            <p class="eyebrow"><span></span> An audio story in two languages</p>
+            <p class="maharaj-devanagari">छत्रपती शिवाजी महाराज</p>
+            <h1 id="story-audio-title">A journey through<br><em>Swarajya.</em></h1>
+            <p>Follow Shivaji Maharaj’s journey in six chapters—from his childhood at Shivneri to the legacy of Swarajya. Choose English or Marathi narration, or read the detailed chapter transcript.</p>
+        </section>
+
+        <section class="story-audio-section" aria-labelledby="story-player-title">
+            <div class="story-audio-heading">
+                <p class="section-kicker">Listen and follow along</p>
+                <h2 id="story-player-title">The story<br><em>comes alive.</em></h2>
+                <p>Choose English or Marathi. Each audio chapter has a matching caption, with more detail in the chapter-by-chapter transcript.</p>
+            </div>
+            <div class="story-audio-player">
+                <div class="audio-language-controls" role="group" aria-label="Narration language">
+                    <button class="audio-language-button" type="button" data-language="en" aria-pressed="true">English</button>
+                    <button class="audio-language-button" type="button" data-language="mr" aria-pressed="false">मराठी</button>
+                </div>
+                <label class="audio-chapter-label" for="story-chapter">Choose a chapter</label>
+                <select id="story-chapter" class="audio-chapter-select"></select>
+                <div class="audio-playback-controls">
+                    <button id="story-play" class="audio-play-button" type="button" aria-label="Listen to narration">
+                        <span class="audio-play-icon" aria-hidden="true">▶</span>
+                        <span>Listen</span>
+                    </button>
+                    <button id="story-pause" class="audio-secondary-button" type="button" disabled>Pause</button>
+                    <button id="story-stop" class="audio-secondary-button" type="button" disabled>Stop</button>
+                </div>
+                <audio id="story-audio" preload="metadata" aria-label="Shivaji Maharaj story narration"></audio>
+                <p id="audio-status" class="audio-status" role="status">Choose a language and press Listen. Narration uses a speech voice available on your device.</p>
+                <div class="audio-caption-box" aria-label="Current narration caption">
+                    <span class="audio-caption-label">CAPTIONS</span>
+                    <p id="audio-caption" aria-live="polite" aria-atomic="true">Your story will appear here as it is read aloud.</p>
+                </div>
+                <details class="audio-transcript" open>
+                    <summary>Read the story by chapter</summary>
+                    <div class="transcript-language" data-transcript="en">
+                        <h3>English</h3>
+                        <section class="story-chapter">
+                            <h4><span>Chapter 01</span> A beginning at Shivneri</h4>
+                            <p>Chhatrapati Shivaji Maharaj was born at Shivneri Fort in 1630, to Shahaji Raje Bhonsle and Jijabai. The fort’s high position above the surrounding valleys made it a naturally protected home, with steep approaches and strong gateways.</p>
+                            <p>Jijabai helped shape her son’s education and sense of responsibility. Stories of the region’s history, the needs of its people, and the changing politics of the Deccan formed part of the world in which the young Shivaji grew up.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>Chapter 02</span> A vision of Swarajya</h4>
+                            <p>As a young leader in the Sahyadri region, Shivaji Maharaj began working toward Swarajya—self-rule rooted in local leadership and the protection of people. The rugged landscape shaped his approach: hills, passes, forests, and valleys could help a smaller force move strategically.</p>
+                            <p>He built support among local communities and relied on trusted commanders and administrators. His growing influence was not based on one battle alone; it depended on planning, alliances, communication, and understanding the terrain.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>Chapter 03</span> Torna and Rajgad</h4>
+                            <p>In 1646, Shivaji Maharaj took control of Torna, an important early step in the expansion of Swarajya. Its height and position offered a commanding view of the surrounding countryside. The fort is also known as Prachandagad.</p>
+                            <p>Nearby Rajgad later became a major centre of his kingdom and served as a capital for many years. Its extensive ridges and fortified sections made it a strategic base for governing, protecting supplies, and coordinating activity across the region.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>Chapter 04</span> Courage, strategy, and resilience</h4>
+                            <p>At Pratapgad in 1659, Shivaji Maharaj’s forces defeated the army of Afzal Khan in a pivotal encounter that strengthened the position of Swarajya. The fort’s location above the surrounding valleys gave it a crucial defensive advantage.</p>
+                            <p>His journey also included difficult sieges, negotiations, and setbacks. After the Treaty of Purandar in 1665 and his visit to Agra the following year, Shivaji Maharaj returned to the Deccan and continued rebuilding his power through careful military and political decisions. During this period, the construction of Sindhudurg began as part of the effort to defend the Konkan coast.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>Chapter 05</span> Raigad and the coronation</h4>
+                            <p>Raigad became the capital of the kingdom and the setting for a defining moment. In 1674, Shivaji Maharaj was crowned Chhatrapati there, formally establishing his sovereignty. The coronation brought leaders and guests to the hilltop capital.</p>
+                            <p>Raigad’s position, fortified routes, water systems, marketplaces, and royal buildings supported its role as a centre of government. Its remains still help visitors imagine how a mountain stronghold could also function as a capital.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>Chapter 06</span> The final years and death</h4>
+                            <p>After his coronation at Raigad in 1674, Shivaji Maharaj continued to lead and strengthen Swarajya. His work brought together hill forts, coastal defences, administration, and the people who served the kingdom.</p>
+                            <p>The forts and institutions built during his lifetime helped the kingdom endure beyond him. Shivaji Maharaj died at Raigad in 1680, bringing his life’s journey to a close.</p>
+                        </section>
+                    </div>
+                    <div class="transcript-language" data-transcript="mr" hidden lang="mr">
+                        <h3>मराठी</h3>
+                        <section class="story-chapter">
+                            <h4><span>प्रकरण ०१</span> शिवनेरीवरील सुरुवात</h4>
+                            <p>छत्रपती शिवाजी महाराजांचा जन्म १६३० मध्ये शिवनेरी किल्ल्यावर शहाजीराजे भोसले आणि जिजाबाई यांच्या पोटी झाला. उंच डोंगरावर वसलेला हा किल्ला खोल दऱ्या, चढणीचे मार्ग आणि मजबूत दरवाजे यांमुळे नैसर्गिकरीत्या सुरक्षित होता.</p>
+                            <p>जिजाबाईंनी शिवाजी महाराजांच्या शिक्षणावर आणि कर्तव्यभावनेवर महत्त्वाचे संस्कार केले. प्रदेशाचा इतिहास, लोकांच्या गरजा आणि दख्खनमधील बदलते राजकारण अशा वातावरणात त्यांचे बालपण घडले.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>प्रकरण ०२</span> स्वराज्याची संकल्पना</h4>
+                            <p>सह्याद्रीच्या प्रदेशात तरुण शिवाजी महाराजांनी स्थानिक नेतृत्व आणि लोकांच्या संरक्षणावर आधारित स्वराज्य उभारण्याचे ध्येय ठेवले. डोंगर, घाटवाटा, जंगले आणि दऱ्या यांची माहिती त्यांच्या रणनीतीचा महत्त्वाचा भाग होती.</p>
+                            <p>त्यांनी स्थानिक समुदायांचा पाठिंबा मिळवला आणि विश्वासू सेनानी व प्रशासकांच्या मदतीने काम केले. त्यांची वाढती ताकद केवळ एका लढाईवर अवलंबून नव्हती; त्यामागे नियोजन, सहकार्य, संदेशव्यवस्था आणि भूप्रदेशाचे ज्ञान होते.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>प्रकरण ०३</span> तोरणा आणि राजगड</h4>
+                            <p>१६४६ मध्ये शिवाजी महाराजांनी तोरणा किल्ला ताब्यात घेतला. स्वराज्याच्या विस्तारातील हे एक महत्त्वाचे सुरुवातीचे पाऊल होते. उंची आणि स्थानामुळे या किल्ल्यावरून आसपासच्या प्रदेशावर लक्ष ठेवता येत असे. तोरण्याला प्रचंडगड असेही म्हणतात.</p>
+                            <p>पुढे राजगड स्वराज्याचे महत्त्वाचे केंद्र बनला आणि अनेक वर्षे राजधानी म्हणून कार्यरत राहिला. त्याचे विस्तीर्ण माच्या आणि बुरुज राज्यकारभार, रसदसाठा आणि प्रदेशातील हालचालींचे नियोजन यांसाठी उपयुक्त होते.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>प्रकरण ०४</span> धैर्य, रणनीती आणि जिद्द</h4>
+                            <p>१६५९ मध्ये प्रतापगडाजवळील निर्णायक संघर्षात शिवाजी महाराजांच्या सैन्याने अफजलखानाच्या सैन्याचा पराभव केला. या विजयामुळे स्वराज्याचे स्थान अधिक बळकट झाले. आसपासच्या दऱ्यांवर लक्ष ठेवता येईल अशा उंच ठिकाणी प्रतापगड वसलेला आहे.</p>
+                            <p>त्यांच्या वाटचालीत वेढे, तह, कठीण प्रसंग आणि नव्याने उभारी घेण्याचे टप्पे आले. १६६५ मधील पुरंदरचा तह आणि पुढील वर्षीची आग्रा भेट यानंतर ते दख्खनमध्ये परतले आणि राजकीय व लष्करी निर्णयांच्या साहाय्याने त्यांनी आपली ताकद पुन्हा उभी केली. याच काळात कोकण किनाऱ्याच्या संरक्षणासाठी सिंधुदुर्गाच्या बांधकामास सुरुवात झाली.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>प्रकरण ०५</span> रायगड आणि राज्याभिषेक</h4>
+                            <p>रायगड स्वराज्याची राजधानी बनला आणि तेथे इतिहासातील महत्त्वाचा सोहळा पार पडला. १६७४ मध्ये शिवाजी महाराजांचा छत्रपती म्हणून राज्याभिषेक झाला. या सोहळ्यासाठी अनेक मान्यवर आणि पाहुणे रायगडावर आले.</p>
+                            <p>किल्ल्याचे सुरक्षित मार्ग, पाण्याची व्यवस्था, बाजारपेठा आणि राजवाड्यांच्या इमारती यांमुळे तो राज्यकारभाराचे केंद्र बनू शकला. आजही रायगडाचे अवशेष डोंगरावरील किल्ला राजधानी म्हणून कसा कार्यरत होता याची कल्पना देतात.</p>
+                        </section>
+                        <section class="story-chapter">
+                            <h4><span>प्रकरण ०६</span> अखेरची वर्षे आणि निधन</h4>
+                            <p>१६७४ मध्ये रायगडावर राज्याभिषेक झाल्यानंतरही शिवाजी महाराजांनी स्वराज्याचे नेतृत्व आणि बळकटीकरण सुरू ठेवले. किल्ले, किनारपट्टीचे संरक्षण, राज्यकारभार आणि स्वराज्यासाठी काम करणारे लोक यांना त्यांनी एकत्र जोडले.</p>
+                            <p>त्यांच्या काळात उभारलेल्या संस्था आणि किल्ल्यांमुळे स्वराज्याचा वारसा पुढे टिकून राहिला. १६८० मध्ये रायगडावर शिवाजी महाराजांचे निधन झाले आणि त्यांच्या जीवनप्रवासाची सांगता झाली.</p>
+                        </section>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-mark">शिवाजी महाराज</div>
+        <p>A humble tribute to the visionary king, Chhatrapati Shivaji Maharaj.</p>
+        <strong>जय भवानी&nbsp;&nbsp;जय शिवाजी</strong>
+    </footer>
+    <script src="story-audio.js?v=select-chapter-death"></script>
+    <script src="story-transcript.js?v=25-lines"></script>
+    <script src="page-transition.js?v=4s-saffron"></script>
+</body>
+</html>

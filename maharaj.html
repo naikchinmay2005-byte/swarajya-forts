@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Chhatrapati Shivaji Maharaj, the founder of Swarajya, his life, leadership, and legacy.">
+    <title>Shivaji Maharaj — Swarajya</title>
+    <link rel="icon" type="image/svg+xml" href="images/shivaji-icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="style.css?v=page-transition">
+</head>
+<body class="maharaj-page">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Swarajya home">
+                <span class="logo-mark">श्री</span>
+                <span>SWARAJYA</span>
+            </a>
+            <div class="nav-actions">
+                <a href="maharaj.html" class="nav-link" aria-current="page">Shivaji Maharaj</a>
+                <a href="story.html" class="nav-link">Listen to story</a>
+                <a href="quiz.html" class="nav-link">Fort quiz</a>
+                <a href="index.html#map" class="nav-link">Fort map</a>
+                <a href="index.html#forts" class="nav-link">Explore forts</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="maharaj-hero">
+            <div class="maharaj-hero-content">
+                <p class="eyebrow"><span></span> The founder of Swarajya</p>
+                <p class="maharaj-devanagari">छत्रपती शिवाजी महाराज</p>
+                <h1>Chhatrapati<br><em>Shivaji Maharaj</em></h1>
+                <p class="maharaj-hero-copy">A visionary leader whose idea of self-rule took root in the Sahyadri hills and grew into a lasting legacy.</p>
+                <a class="hero-button" href="#life">Discover his story <b aria-hidden="true">↓</b></a>
+            </div>
+            <div class="maharaj-hero-note"><span>1630</span><i></i><span>1680</span></div>
+        </section>
+
+        <section id="life" class="maharaj-intro">
+            <div class="maharaj-intro-heading">
+                <p class="section-kicker">A life that shaped a legacy</p>
+                <h2>From the hills of Shivneri<br>to the throne at Raigad.</h2>
+            </div>
+            <div class="maharaj-intro-copy">
+                <p>Shivaji Maharaj was born at Shivneri Fort in 1630. In the 17th century Deccan, he built an independent kingdom through bold leadership, careful statecraft and a network of strategically held forts.</p>
+                <p>His coronation at Raigad in 1674 marked the formal establishment of Hindavi Swarajya. His story is remembered not only through battles, but through the institutions, maritime vision and ideals of self-rule he championed.</p>
+            </div>
+        </section>
+
+        <section class="maharaj-portraits" aria-labelledby="portraits-title">
+            <div class="portraits-heading">
+                <img class="maharaj-portrait-icon" src="images/shivaji-icon.svg" alt="" aria-hidden="true">
+                <div>
+                    <p class="section-kicker">Portraits through time</p>
+                    <h2 id="portraits-title">How history remembers him.</h2>
+                </div>
+                <p class="portraits-note">Photography did not exist in Shivaji Maharaj’s lifetime. These historical artworks offer artistic depictions of him.</p>
+            </div>
+            <div class="portraits-grid">
+                <figure class="portrait-card portrait-card-manuscript">
+                    <a href="https://commons.wikimedia.org/wiki/File:Detail_of_Shivaji_from_a_contemporary_manuscript_painting_depicting_Shivaji_Shahaji_Bhonsale,_from_an_illustrated_Aparokshanubhuti_Granth_manuscript,_ca.1664%E2%80%9366.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Detail_of_Shivaji_from_a_contemporary_manuscript_painting_depicting_Shivaji_Shahaji_Bhonsale%2C_from_an_illustrated_Aparokshanubhuti_Granth_manuscript%2C_ca.1664%E2%80%9366.jpg" alt="Detail of a 17th-century manuscript painting depicting Shivaji Maharaj" loading="lazy">
+                    </a>
+                    <figcaption>
+                        <span class="portrait-period">c. 1664–66 · Manuscript painting</span>
+                        <strong>A contemporary likeness</strong>
+                        <span>From an illustrated Aparokshanubhuti Granth manuscript; artist unknown. <a href="https://commons.wikimedia.org/wiki/File:Detail_of_Shivaji_from_a_contemporary_manuscript_painting_depicting_Shivaji_Shahaji_Bhonsale,_from_an_illustrated_Aparokshanubhuti_Granth_manuscript,_ca.1664%E2%80%9366.jpg" target="_blank" rel="noopener noreferrer">Public-domain source</a>.</span>
+                    </figcaption>
+                </figure>
+                <figure class="portrait-card portrait-card-dhurandhar">
+                    <a href="https://commons.wikimedia.org/wiki/File:Shivaji-Dhurandhar.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Shivaji-Dhurandhar.jpg" alt="A 1924 artistic depiction of Shivaji Maharaj and his army by M. V. Dhurandhar" loading="lazy">
+                    </a>
+                    <figcaption>
+                        <span class="portrait-period">1924 · M. V. Dhurandhar</span>
+                        <strong>A later artistic interpretation</strong>
+                        <span>A printed artwork depicting Shivaji Maharaj with his army. <a href="https://commons.wikimedia.org/wiki/File:Shivaji-Dhurandhar.jpg" target="_blank" rel="noopener noreferrer">Public-domain source</a>.</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="maharaj-timeline-section">
+            <div class="timeline-heading">
+                <p class="section-kicker">The journey</p>
+                <h2>Moments in his life</h2>
+            </div>
+            <div class="maharaj-timeline">
+                <article class="timeline-card">
+                    <span class="timeline-year">1630</span>
+                    <span class="timeline-place">Shivneri Fort</span>
+                    <h3>A beginning in the hills</h3>
+                    <p>Shivaji was born at Shivneri, a hill fort in present-day Pune district.</p>
+                </article>
+                <article class="timeline-card">
+                    <span class="timeline-year">1646</span>
+                    <span class="timeline-place">Torna Fort</span>
+                    <h3>The first stronghold</h3>
+                    <p>The capture of Torna is widely remembered as an early milestone in his campaign to establish Swarajya.</p>
+                </article>
+                <article class="timeline-card">
+                    <span class="timeline-year">1674</span>
+                    <span class="timeline-place">Raigad Fort</span>
+                    <h3>Crowned Chhatrapati</h3>
+                    <p>At Raigad, Shivaji Maharaj was formally crowned, establishing the seat of his independent kingdom.</p>
+                </article>
+                <article class="timeline-card">
+                    <span class="timeline-year">1680</span>
+                    <span class="timeline-place">Raigad Fort</span>
+                    <h3>A legacy carried forward</h3>
+                    <p>Shivaji Maharaj passed away at Raigad. The movement and ideals he set in motion endured beyond his lifetime.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="life-map-section" aria-labelledby="life-map-title">
+            <div class="life-map-heading">
+                <p class="section-kicker">His story, by place</p>
+                <h2 id="life-map-title">A life among the forts.</h2>
+                <p>Choose a stop to see how each fort connects to Shivaji Maharaj’s journey.</p>
+            </div>
+            <div class="life-map-layout">
+                <div class="life-map-frame">
+                    <div id="life-map" class="life-map-canvas" role="region" aria-label="Interactive map showing Shivneri, Torna, and Raigad forts"></div>
+                    <p id="life-map-status" class="life-map-status hidden" role="status"></p>
+                </div>
+                <aside class="life-map-stops" aria-label="Stops in Shivaji Maharaj's life">
+                    <div class="life-stop-list" id="life-stop-list"></div>
+                    <article id="life-stop-detail" class="life-stop-detail" aria-live="polite"></article>
+                </aside>
+            </div>
+        </section>
+
+        <section class="maharaj-legacy">
+            <div class="legacy-heading">
+                <p class="section-kicker">More than a warrior</p>
+                <h2>A kingdom built<br><em>to endure.</em></h2>
+            </div>
+            <div class="legacy-grid">
+                <article class="legacy-card">
+                    <span class="legacy-number">01</span>
+                    <h3>Fort strategy</h3>
+                    <p>Hill and coastal forts formed a connected defensive network, supporting governance, communication and security.</p>
+                </article>
+                <article class="legacy-card">
+                    <span class="legacy-number">02</span>
+                    <h3>Maritime vision</h3>
+                    <p>He invested in a navy and sea forts to protect the Konkan coastline and strengthen the kingdom’s presence at sea.</p>
+                </article>
+                <article class="legacy-card">
+                    <span class="legacy-number">03</span>
+                    <h3>Statecraft</h3>
+                    <p>His administration brought together revenue, military and civil responsibilities to govern a growing kingdom.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="maharaj-explore">
+            <p class="section-kicker">Walk through the legacy</p>
+            <h2>Explore the forts that<br>tell his story.</h2>
+            <a class="landing-cta-button" href="index.html#map">Open the fort map <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-mark">शिवाजी महाराज</div>
+        <p>A humble tribute to the visionary king, Chhatrapati Shivaji Maharaj.</p>
+        <strong>जय भवानी&nbsp;&nbsp;जय शिवाजी</strong>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="maharaj.js?v=life-map"></script>
+    <script src="page-transition.js?v=4s-saffron"></script>
+</body>
+</html>

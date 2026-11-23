@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarajya — Enter the Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=page-transition">
+</head>
+<body class="login-page-body">
+    <a href="landing.html" class="login-back">← Back to the legacy</a>
+    <section class="form-container">
+        <div class="login-brand">
+            <span class="logo-mark">श्री</span>
+            <span>SWARAJYA</span>
+        </div>
+        <div class="form-toggle">
+            <button id="login-toggle" class="toggle-btn active" type="button">Enter</button>
+            <button id="signup-toggle" class="toggle-btn" type="button">Join</button>
+        </div>
+        <form id="login-form" class="auth-form">
+            <h2>Welcome back</h2>
+            <p>Continue exploring the legacy.</p>
+            <div class="input-group">
+                <label for="login-email">Email address</label>
+                <input type="email" id="login-email" required>
+                <p class="validation-message"></p>
+            </div>
+            <div class="input-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" minlength="6" required>
+            </div>
+            <button type="submit" class="submit-btn">Enter the archive</button>
+            <p id="login-error" class="error-message"></p>
+        </form>
+        <form id="signup-form" class="auth-form hidden">
+            <h2>Join the mission</h2>
+            <p>Begin your journey through Swarajya.</p>
+            <div class="input-group">
+                <label for="signup-email">Email address</label>
+                <input type="email" id="signup-email" required>
+                <p class="validation-message"></p>
+            </div>
+            <div class="input-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" minlength="6" required>
+            </div>
+            <button type="submit" class="submit-btn">Create local profile</button>
+            <p id="signup-error" class="error-message"></p>
+        </form>
+    </section>
+    <script src="script.js?v=page-transition"></script>
+    <script src="page-transition.js?v=4s-saffron"></script>
+</body>
+</html>

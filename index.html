@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarajya — Sentinel Forts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="style.css?v=page-transition">
+</head>
+<body class="main-page">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Swarajya home">
+                <span class="logo-mark">श्री</span>
+                <span>SWARAJYA</span>
+            </a>
+            <div class="nav-actions">
+                <a href="maharaj.html" class="nav-link">Shivaji Maharaj</a>
+                <a href="story.html" class="nav-link">Listen to story</a>
+                <a href="quiz.html" class="nav-link">Fort quiz</a>
+                <a href="#map" class="nav-link">Fort map</a>
+                <a href="#forts" class="nav-link">Explore forts</a>
+                <button id="logout-btn" class="logout-button" type="button">Exit</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-text">
+                <p class="eyebrow"><span></span> Maharashtra · 1674–1680</p>
+                <h1>Where hills became <em>homes of freedom.</em></h1>
+                <p class="hero-copy">Journey through the fortresses that guarded an empire of courage, strategy and self-rule.</p>
+                <a href="#forts" class="hero-button">Explore the strongholds <b aria-hidden="true">↓</b></a>
+            </div>
+            <div class="hero-seal" aria-hidden="true">
+                <span>जय</span>
+                <strong>शिवराय</strong>
+            </div>
+        </section>
+
+        <section id="map" class="fort-map-section">
+            <div class="map-heading">
+                <div>
+                    <p class="section-kicker">Explore by place</p>
+                    <h2>Forts across the<br><em>Sahyadri &amp; coast.</em></h2>
+                </div>
+                <p>Follow the trail from the high Sahyadri ranges to the forts guarding the Konkan sea.</p>
+            </div>
+            <div class="map-layout">
+                <div class="map-column">
+                    <div class="illustrated-map real-map-frame" role="group" aria-label="Interactive map of forts in Maharashtra">
+                        <div id="fort-map" class="map-canvas" role="region" aria-label="Interactive map of forts in Maharashtra"></div>
+                        <div id="map-status" class="map-status hidden" role="status"></div>
+                        <div class="map-legend" aria-label="Map legend"><span><i class="legend-hill"></i> Hill fort</span><span><i class="legend-sea"></i> Sea fort</span></div>
+                    </div>
+                </div>
+                <aside class="map-index" aria-label="Fort map index">
+                    <div class="map-index-heading"><span>Map index</span><span>23 forts</span></div>
+                    <ol id="fort-map-index"></ol>
+                </aside>
+            </div>
+        </section>
+
+        <section id="forts" class="forts-container">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Fort archive</p>
+                    <h2>The Maratha Strongholds</h2>
+                </div>
+                <p class="fort-count"><span id="visible-count">23</span> forts documented</p>
+            </div>
+
+            <div class="fort-toolbar">
+                <label class="search-box" for="fort-search">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="fort-search" type="search" placeholder="Search by fort or region" autocomplete="off">
+                </label>
+                <div class="filter-chips" aria-label="Filter forts">
+                    <button class="filter-chip active" type="button" data-filter="all">All</button>
+                    <button class="filter-chip" type="button" data-filter="hill">Hill forts</button>
+                    <button class="filter-chip" type="button" data-filter="sea">Sea forts</button>
+                </div>
+            </div>
+
+            <div class="forts-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <div id="modal-overlay" class="hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <article id="modal-content"></article>
+    </div>
+
+    <footer>
+        <div class="footer-mark">शिवाजी महाराज</div>
+        <p>A humble tribute to the visionary king, Chhatrapati Shivaji Maharaj.</p>
+        <strong>जय भवानी&nbsp;&nbsp;जय शिवाजी</strong>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="fort-details.js?v=20-lines"></script>
+    <script src="script.js?v=page-transition"></script>
+    <script src="page-transition.js?v=4s-saffron"></script>
+</body>
+</html>
